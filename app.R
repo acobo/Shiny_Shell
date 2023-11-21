@@ -99,9 +99,9 @@ ui <- fluidPage(
       shinyjs::hidden(
         div(id = "deviation_filtering_panel",
             sliderInput("std_range", "Standard Deviation Range:",
-                        min = 0, max = 2, value = c(0, 2), step = 0.01),
+                        min = 0, max = 30, value = c(0, 2), step = 0.01),
             sliderInput("rel_std_range", "Relative Standard Deviation Range:",
-                        min = 0, max = 2, value = c(0, 2), step = 0.01)
+                        min = 0, max = 30, value = c(0, 2), step = 0.01)
         )
       ),
       
